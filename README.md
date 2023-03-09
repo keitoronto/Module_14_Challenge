@@ -21,15 +21,18 @@ In this section, you’ll tune, or adjust, the model’s input features to find 
 
 Step 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
 
-    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.
+    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.  
 
-The original training data with an offset of 3 month
+
+The original training data with an offset of 3 month  
+
 ![Decorative image.](Images/offset_3_window4and100.png)
 
 ![Decorative image.](Images/offset_3.png)
 
 
-This is the report with the three months period
+This is the report with the three months period  
+
 ![Decorative image.](Images/offset_3_report.png)
 
 This is the a cumulative return plot based on three months training data.
@@ -40,6 +43,7 @@ Whereas this is training data with an offset of 6 month
 ![Decorative image.](Images/offset_6.png)
 
 This is the report with the three months period
+ 
 ![Decorative image.](Images/offset_6_report.png)
 
 This is the a cumulative return plot based on three months training data.
