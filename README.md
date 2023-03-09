@@ -19,9 +19,9 @@ You’ll combine your new algorithmic trading skills with your existing skills i
 
 In this section, you’ll tune, or adjust, the model’s input features to find the parameters that result in the best trading outcomes. (You’ll choose the best by comparing the cumulative products of the strategy returns.) To do so, complete the following steps:
 
-Step 1. Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
+**Step 1.** Tune the training algorithm by adjusting the size of the training dataset. To do so, slice your data into different periods. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing the training window?
 
-    > **Hint** To adjust the size of the training dataset, you can use a different `DateOffset` value&mdash;for example, six months. Be aware that changing the size of the training dataset also affects the size of the testing dataset.  
+    > **Hint** To adjust the size of the training dataset, you   can use a different `DateOffset` value&mdash;for   example, six months. Be aware that changing the size of   the training dataset also affects the size of the testing dataset.  
 
 
 The original training data with an offset of 3 month  
@@ -51,14 +51,14 @@ This is the a cumulative return plot based on three months training data.
 
 **Answer:** With changing the offset period from three months to six months, the accuracy has increased by 1% to be 56%. As a result, actual returns and strategy returns increased by 20% respectively.
 
-Step 2. Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
+**Step 2.** Tune the trading algorithm by adjusting the SMA input features. Adjust one or both of the windows for the algorithm. Rerun the notebook with the updated parameters, and record the results in your `README.md` file. Answer the following question: What impact resulted from increasing or decreasing either or both of the SMA windows?
 
 This is the plot using 50 as the short window and 100 as the long window. 
 ![Decorative image.](Images/plot_window4and100.png)
 
 **Answer:** Although I changed the short window from 4 to 50, there was no significant difference.  
 
-Step 3. Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
+**Step 3.** Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion in your `README.md` file.
 
 Chosen parameters: short window: 10, long windows: 100, off set data: 6 months.
 
